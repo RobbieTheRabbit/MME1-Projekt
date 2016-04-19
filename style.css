@@ -1,21 +1,23 @@
 body {
     color: #3f312e;
-    background: #ecd078 url('img/bg.png') repeat-x;
+    background: black url('img/background.jpg');
     font: 14px Helvetica, Arial, Sans-serif;
 }
 
 #header {
     width: 1200px;
-    min-height: 120px;
+    min-height: 100px;
     margin: 0 auto;
+    color: white;
 }
 
 #navigation {
     width: 960px;
     margin: 0 auto;
     position: relative;
+    font-size: 14px;
     top: 20px;
-    right: 180px
+    right: 50px
 }
 
 #navigation u1 {
@@ -30,14 +32,16 @@ body {
 }
 
 #navigation ul li a {
-    background: #fbe49b;
+    color: whitesmoke;
+    background: #3088BF;
     text-decoration: none;
     padding: 10px 10px 6px 10px;
     text-transform: uppercase;
-    border-left: 1px solid #e4bc3f;
-    border-top: 1px solid #e4bc3f;
-    border-right: 1px solid #e4bc3f;
-    background: #fbe49b;
+    border-left: 1px solid #0080FF;
+    border-top: 1px solid #0080FF;
+    border-right: 1px solid #0080FF;
+    background: #3088BF;
+    font
 }
 
 #navigation ul li.current_page_item a,
@@ -51,22 +55,22 @@ body {
 
 #container {
     overflow: auto;
-    width: 1250px;
+    width: 1050px;
     margin: 0 auto;
     padding: 10px;
     background: url(img/main.png);
 }
 
 #content {
-    width: 1200px;
+    width: 1000px;
     min-height: 650px;
     margin: 0 auto;
-    background: #fff;
+    background: #F2F2F2;
     padding: 20px
 }
 
 #contentleft {
-    width: 850px;
+    width: 660px;
     float: left;
     margin-right: 20px;
 }
@@ -77,10 +81,10 @@ body {
 }
 
 #sitebar {
-    width: 300px;
+    width: 310px;
     float: left;
     position: relative;
-    left: 20px;
+    left: 10px;
 }
 
 .sidebar-element {
@@ -89,7 +93,7 @@ body {
 
 #sitebar h3 {
     color: #fff;
-    background: #53777a;
+    background: #3088BF;
     padding: 7px 10px;
     text-transform: uppercase;
     font-size: 14px;
@@ -106,10 +110,12 @@ body {
 }
 
 #footer {
-    width: 1200px;
-    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
     margin: 0 auto;
     text-align: center;
+    padding: 10px;
+    background: #F2F2F2 url('img/main.png');
 }
 
 #footer ul {
@@ -129,4 +135,5 @@ body {
 
 #footer p {
     font-weight: bold;
+    margin-top: 7px;
 }
