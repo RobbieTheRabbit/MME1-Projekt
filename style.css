@@ -61,6 +61,17 @@ body {
     background: url(img/main.png);
 }
 
+table,
+th,
+td{
+    border: 1px solid;
+}
+
+#table{
+ border: 1px solid;
+ border-collapse: collapse;
+}
+
 #content {
     width: 1000px;
     min-height: 600px;
