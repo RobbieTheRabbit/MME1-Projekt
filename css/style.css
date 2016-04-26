@@ -1,14 +1,14 @@
 body {
     color: #3f312e;
-    background: black url('img/background.jpg');
+    background: black url('../img/background.jpg');
     font: 14px Helvetica, Arial, Sans-serif;
+    image-orientation: center;
 }
 
 #header {
-    width: 1200px;
+    width: 1000px;
     min-height: 100px;
     margin: 0 auto;
-    color: white;
 }
 
 #navigation {
@@ -50,7 +50,7 @@ body {
     border-left: 1px solid #fff;
     border-top: 1px solid #fff;
     border-right: 1px, solid #fff;
-    background: #fff url('img/nav.png') repeat-x left top
+    background: #fff url('../img/nav.png') repeat-x left top
 }
 
 #container {
@@ -58,13 +58,23 @@ body {
     width: 1050px;
     margin: 0 auto;
     padding: 10px;
-    background: url(img/main.png);
+    background: url(../img/main.png);
 }
 
+table,
+th,
+td{
+    border: 1px solid;
+}
+
+#table{
+ border: 1px solid;
+ border-collapse: collapse;
+}
 
 #content {
     width: 1000px;
-    min-height: 650px;
+    min-height: 600px;
     margin: 0 auto;
     background: #F2F2F2;
     padding: 20px
@@ -111,12 +121,19 @@ body {
 }
 
 #footer {
-    width: 1000px;
-    height: 50px;
+    overflow: auto;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url('../img/main.png');
+}
+
+#footercontent {
+    width: 1050px;
+    min-height: 50px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
-    background: #F2F2F2 url('img/main.png');
+    background: #F2F2F2;
 }
 
 #footer ul {

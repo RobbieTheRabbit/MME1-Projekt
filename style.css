@@ -1,6 +1,6 @@
 body {
     color: #3f312e;
-    background: black url('img/background.jpg');
+    background: black url('../img/background.jpg');
     font: 14px Helvetica, Arial, Sans-serif;
     image-orientation: center;
 }
