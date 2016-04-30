@@ -63,13 +63,13 @@ body {
 
 table,
 th,
-td{
+td {
     border: 1px solid;
 }
 
-#table{
- border: 1px solid;
- border-collapse: collapse;
+#table {
+    border: 1px solid;
+    border-collapse: collapse;
 }
 
 #content {
@@ -154,4 +154,57 @@ td{
 #footer p {
     font-weight: bold;
     margin-top: 7px;
+}
+
+/*Tabellen*/
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #999;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #999;
+    color: #444;
+    background-color: #F7FDFA;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #999;
+    color: #fff;
+    background-color: #26ADE4;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.tg .tg-0o0u {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #3088bf;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-wr1l {
+    font-size: 12px;
+    font-family: Arial, sans-serif;    ;
+    text-align: center;
+    vertical-align: top
 }
