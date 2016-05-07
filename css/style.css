@@ -5,13 +5,13 @@ body {
     image-orientation: center;
 }
 
-#header {
+header {
     width: 1000px;
     min-height: 100px;
     margin: 0 auto;
 }
 
-#navigation {
+nav{
     width: 960px;
     margin: 0 auto;
     position: relative;
@@ -20,18 +20,18 @@ body {
     right: 50px
 }
 
-#navigation u1 {
+nav u1 {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-#navigation ul li {
+nav ul li {
     display: inline;
     margin-right: 4px;
 }
 
-#navigation ul li a {
+nav ul li a {
     color: whitesmoke;
     background: #3088BF;
     text-decoration: none;
@@ -72,7 +72,7 @@ td {
     border-collapse: collapse;
 }
 
-#content {
+section {
     width: 1000px;
     min-height: 600px;
     margin: 0 auto;
@@ -80,13 +80,13 @@ td {
     padding: 20px
 }
 
-#contentleft {
+#sectionleft {
     width: 660px;
     float: left;
     margin-right: 20px;
 }
 
-#contentleft h1 {
+#sectionleft h1 {
     font-size: 24px;
     margin-top: 0;
 }
@@ -120,41 +120,18 @@ td {
     margin: 0 0 7px 0;
 }
 
-#footer {
-    overflow: auto;
-    width: 1050px;
-    margin: 0 auto;
-    padding: 10px;
-    background: url('../img/main.png');
-}
 
-#footercontent {
+
+footer{
     width: 1050px;
     min-height: 50px;
     margin: 0 auto;
+    font-weight:bold;
     text-align: center;
     background: #F2F2F2;
 }
 
-#footer ul {
-    margin: 15px 0 0 0;
-    padding: 0;
-    list-style-type: none;
-}
 
-#footer ul li {
-    display: inline;
-    margin-right: 5px;
-}
-
-#footer ul li a:hover {
-    text-decoration: underline;
-}
-
-#footer p {
-    font-weight: bold;
-    margin-top: 7px;
-}
 
 /*Tabellen*/
 .tg {

@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <div id="header">
+    <header>
 
         <a href="index.html"><img src="img/banner.png" width=1000 height=140 BORDER="0"></a>
 
-    </div>
+    </header>
 
-    <div id="navigation">
+    <nav>
         <ul>
             <li><a href="index.html"> Startseite</a></li>
             <li><a href="drehorte.html"> Drehorte</a></li>
@@ -25,14 +25,15 @@
 
         </ul>
 
-    </div>
+    </nav>
     <div id="container">
 
-        <div id="content">
-            <div id="contentleft">
+        <section>
+            <div id="sectionleft">
 
                 <h1> Gesamte Auflistung der Drehorte!</h1>
                 <p>Hier finden Sie alle Drehorte, die wir bei uns hinterlegt haben.</p>
+                <input type="text" name="country" size="30" style=" height:25px; font-size:14px;" required placeholder="z.B. Filmtitel oder Location">
                 <p>Wenn Sie noch andere Kennen und uns diese Mitteilen möchten, dann benutzen Sie bitte den Button unterhalb der Liste</p>
 
 
@@ -57,7 +58,7 @@
                     </tr>
                    
                     <tr>
-                        <td class="tg-wr1l">Hobbingen</td>
+                        <td class="tg-wr1l"><a href="hobbingen.html">Hobbingen</td>
                         <td class="tg-wr1l">Neuseeland</td>
                         <td class="tg-wr1l"><a href="http://hobbitontours.com/">Hobbitontours</a></td>
                         <td class="tg-wr1l"><a href="mailto:office@hobbitontours.com">Kontaktieren</a>
@@ -140,18 +141,14 @@
 
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
-    <div id="footer">
-        <div id="footercontent">
-            <ul>
-                <li><a href=""> Kontakt</a></li>
-                <li><a href=""> Impressum</a></li>
-            </ul>
+    <footer>
+                <a href=""> Kontakt</a>
+                <a href=""> Impressum</a>
             <p>&copy;2016 Movie Places</p>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>

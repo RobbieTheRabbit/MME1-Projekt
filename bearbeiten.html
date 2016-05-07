@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <div id="header">
+    <header>
 
         <a href="index.html"><img src="img/banner.png" width=1000 height=140 BORDER="0"></a>
 
-    </div>
+    </header>
 
-    <div id="navigation">
+    <nav>
         <ul>
             <li><a href="index.html"> Startseite</a></li>
             <li><a href="drehorte.html"> Drehorte</a></li>
@@ -25,11 +25,11 @@
 
         </ul>
 
-    </div>
+    </nav>
     <div id="container">
 
-        <div id="content">
-            <div id="contentleft">
+        <section>
+            <div id="sectionleft">
 
                 <h1> Bearbeitung von Drehorten!</h1>
                 <p>Wir prüfen dann die Bearbeitung und ändern sie dann um.</p>
@@ -61,11 +61,14 @@
                             <br>
                             <br> <strong>Uhrzeit der Besichtigung:* </strong>
                             Von:
-                            <input type="text" name="timefrom" size="5" placeholder="HH:MM" pattern="(?:[01]|2(?![4-9])){1}\d{1}:[0-5]{1}\d{1}" required > 
+                            <input type="text" name="timefrom" size="6" placeholder="HH:MM" pattern="(?:[01]|2(?![4-9])){1}\d{1}:[0-5]{1}\d{1}" required > 
                             Bis:
-                            <input type="text" name="timeto" size="5" placeholder="HH:MM" pattern="^[0-2][0-3]:[0-5][0-9]$" required>
+                            <input type="text" name="timeto" size="6" placeholder="HH:MM" pattern="^[0-2][0-3]:[0-5][0-9]$" required>
                             <br>
 
+                            <form action="#">
+                        <input type="submit" value="Löschen!" style="margin-top:12px; height: 30px; width:100px;">
+                    </form>
                     </fieldset>
 
                     <form action="#" align="center">
@@ -111,18 +114,14 @@
 
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
-    <div id="footer">
-        <div id="footercontent">
-            <ul>
-                <li><a href=""> Kontakt</a></li>
-                <li><a href=""> Impressum</a></li>
-            </ul>
+    <footer>
+                <a href=""> Kontakt</a>
+                <a href=""> Impressum</a>
             <p>&copy;2016 Movie Places</p>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>
