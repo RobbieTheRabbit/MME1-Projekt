@@ -34,19 +34,19 @@
                 <h1> Eintragen von neuen Drehorten!</h1>
                 <p>Kennen Sie Drehorte, die noch nicht in der Liste sind? Dann tragen Sie diese hier ein!</p>
                 <p>Wir prüfen dann die Einträge und fügen es dann hinzu.</p>
-   
-                <main role="main">
-                <form name="Formular" action="" method="post" > 
-                    
+
+
+                <form action="form_response.php" method="post">
                     <fieldset>
                         <legend>Neuer Eintrag</legend>
-                        <label for="name"><strong>Name des Drehortes:*</strong></label><input size="40" name="name" id="name" required placeholder="z.B. Hobbingen">
+                        <strong>Name des Drehortes:*</strong>
+                        <input type="text" name="Name" size="25" maxlength="30" required placeholder="z.B. Hobbingen">
                         <br>
+                        <br> <strong>Der Ort (Land):*</strong>
+                        <input type="text" name="country" size="25" maxlength="30" required placeholder="z.B. Deutschland">
                         <br>
-                        <label for="country"><strong>Der Ort (Land):*</strong></label><input size="40" name="country" id="country" required placeholder="z.B. Deutschland">
-                        <br>
-                        <br> 
-                        <label for="email"><strong>Email des Tour Anbieters:*</strong></label><input size="40" name="email" id="email" required placeholder="name@example.com">
+                        <br> <strong>Email des Tour Anbieters:*</strong>
+                        <input type="email" name="email" placeholder="name@example.com">
                         <br>
                         <br> <strong>Tage der Besichtigung:*</strong>
                         <form action="demo_form.asp" method="get">
@@ -60,94 +60,21 @@
                             <input type="checkbox" name="vehicle" value="saturday"> Samstag
                             <input type="checkbox" name="vehicle" value="sunday"> Sonntag
                             <br>
-                            <br> 
-                        <label for="time"><strong>Uhrzeit der Besichtigung:*</strong></label>
-                            
-                        <label for="timefrom">Von:</label><input size="6" name="timefrom" id="timefrom" required placeholder="HH:MM">
-                        <label for="timeto">Bis:</label><input size="6" name="timeto" id="timeto" required placeholder="HH:MM">
-                            
-                            
+                            <br> <strong>Uhrzeit der Besichtigung:* </strong>
+                            Von:
+                            <input type="text" name="timefrom" size="6" placeholder="HH:MM" pattern="(?:[01]|2(?![4-9])){1}\d{1}:[0-5]{1}\d{1}" required > 
+                            Bis:
+                            <input type="text" name="timeto" size="6" placeholder="HH:MM" pattern="^[0-2][0-3]:[0-5][0-9]$" required>
                             <br>
 
                     </fieldset>
-                     <button id="los" type="submit" style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
-                </form>  
-                </main>
 
+                    <form action="#" align="center">
+                        <input type="submit" value="Einsenden!" style="margin-top:12px; height: 30px; width:100px;">
+                    </form>
 
-<script>
-    var elem = document.getElementById('los');
-    elem.addEventListener('click', chkFormular);
- 
-function chkFormular() {
-  if (document.Formular.name.value == "") {
-    alert("Bitte Namen des Drehortes eingeben!");
-    document.Formular.name.focus();
-    return false;
-  }
-  if (document.Formular.country.value == "") {
-    alert("Bitte den Ort eingeben!");
-    document.Formular.country.focus();
-    return false;
-  }
-  if (document.Formular.email.value == "") {
-    alert("Bitte die E-Mail-Adresse des Tour Anbieters eingeben!");
-    document.Formular.email.focus();
-    return false;
-  }
-  if (document.Formular.email.value.indexOf("@") == -1) {
-    alert("Dies ist keine gültige E-Mail-Adresse!");
-    document.Formular.email.focus();
-    return false;
-  }
-    if (document.Formular.timefrom.value == "") {
-    alert("Bitte die Uhrzeiten eintragen!");
-    document.Formular.timefrom.focus();
-    return false;
-  }
-    if (document.Formular.timeto.value == "") {
-    alert("Bitte die Uhrzeiten eintragen!");
-    document.Formular.timeto.focus();
-    return false;
-  }
-  var chkZ = 1;
-  for (i = 0; i < document.Formular.timefrom.value.length; ++i)
-    if (document.Formular.timefrom.value.charAt(i) < "0" ||
-        document.Formular.timefrom.value.charAt(i) > "9")
-      chkZ = -1;
-  if (chkZ == -1) {
-    alert("Uhrzeit keine Zahl!");
-    document.Formular.timefrom.focus();
-    return false;
-  }
-  var chkZ = 1;
-  for (i = 0; i < document.Formular.timeto.value.length; ++i)
-    if (document.Formular.timeto.value.charAt(i) < "0" ||
-        document.Formular.timeto.value.charAt(i) > "9")
-      chkZ = -1;
-  if (chkZ == -1) {
-    alert("Uhrzeit keine Zahl!");
-    document.Formular.timeto.focus();
-    return false;
-  }    
-}
-</script>     
-                    
-                    
-                    
 
             </div>
-                
-                
- <!-------------------------- AB HIER BEGINNT DIE SIDEBAR ----------------------------------------->               
-                
-                
-                
-                
-                
-                
-                
-                
             <div id="sitebar">
                 <div class="sitebar-element">
                     <h3>Über uns</h3>
