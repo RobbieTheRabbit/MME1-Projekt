@@ -7,6 +7,7 @@
     <title>MOVIE PLACES</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script language="javascript" type="text/javascript" src="js/eintrag.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                 <p>Wir prüfen dann die Einträge und fügen es dann hinzu.</p>
 
 
-                <form action="form_response.php" method="post">
+                <form name="eintrag" action="form_response.php" method="post">
                     <fieldset>
                         <legend>Neuer Eintrag</legend>
                         <strong>Name des Drehortes:*</strong>
@@ -46,7 +47,7 @@
                         <input type="text" name="country" size="25" maxlength="30" required placeholder="z.B. Deutschland">
                         <br>
                         <br> <strong>Email des Tour Anbieters:*</strong>
-                        <input type="email" name="email" placeholder="name@example.com">
+                        <input type="email" name="email" placeholder="name@example.com" required>
                         <br>
                         <br> <strong>Tage der Besichtigung:*</strong>
                         <form action="demo_form.asp" method="get">
@@ -60,10 +61,8 @@
                             <input type="checkbox" name="vehicle" value="saturday"> Samstag
                             <input type="checkbox" name="vehicle" value="sunday"> Sonntag
                             <br>
-                            <br> <strong>Uhrzeit der Besichtigung:* </strong>
-                            Von:
-                            <input type="text" name="timefrom" size="6" placeholder="HH:MM" pattern="(?:[01]|2(?![4-9])){1}\d{1}:[0-5]{1}\d{1}" required > 
-                            Bis:
+                            <br> <strong>Uhrzeit der Besichtigung:* </strong> Von:
+                            <input type="text" name="timefrom" size="6" placeholder="HH:MM" pattern="(?:[01]|2(?![4-9])){1}\d{1}:[0-5]{1}\d{1}" required> Bis:
                             <input type="text" name="timeto" size="6" placeholder="HH:MM" pattern="^[0-2][0-3]:[0-5][0-9]$" required>
                             <br>
 
@@ -112,14 +111,16 @@
 
                 </div>
             </div>
-        </div>
+    </div>
     </section>
 
     <footer>
-                <a href=""> Kontakt</a>
-                <a href=""> Impressum</a>
-            <p>&copy;2016 Movie Places</p>
+        <a href=""> Kontakt</a>
+        <a href=""> Impressum</a>
+        <p>&copy;2016 Movie Places</p>
     </footer>
+
+
 </body>
 
 </html>
