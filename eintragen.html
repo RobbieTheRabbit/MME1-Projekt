@@ -7,6 +7,7 @@
     <title>MOVIE PLACES</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script language="javascript" type="text/javascript" src="js/eintrag.js"></script>
 </head>
 
 <body>
@@ -34,10 +35,16 @@
                 <h1> Eintragen von neuen Drehorten!</h1>
                 <p>Kennen Sie Drehorte, die noch nicht in der Liste sind? Dann tragen Sie diese hier ein!</p>
                 <p>Wir prüfen dann die Einträge und fügen es dann hinzu.</p>
+
    
                 <main role="main">
                 <form name="Formular" action="" method="post" > 
                     
+
+
+
+                <form name="eintrag" action="form_response.php" method="post">
+
                     <fieldset>
                         <legend>Neuer Eintrag</legend>
                         <label for="name"><strong>Name des Drehortes:*</strong></label><input size="40" name="name" id="name" required placeholder="z.B. Hobbingen">
@@ -45,8 +52,11 @@
                         <br>
                         <label for="country"><strong>Der Ort (Land):*</strong></label><input size="40" name="country" id="country" required placeholder="z.B. Deutschland">
                         <br>
+
                         <br> 
                         <label for="email"><strong>Email des Tour Anbieters:*</strong></label><input size="40" name="email" id="email" required placeholder="name@example.com">
+
+
                         <br>
                         <br> <strong>Tage der Besichtigung:*</strong>
                         <form action="demo_form.asp" method="get">
@@ -185,14 +195,16 @@ function chkFormular() {
 
                 </div>
             </div>
-        </div>
+    </div>
     </section>
 
     <footer>
-                <a href=""> Kontakt</a>
-                <a href=""> Impressum</a>
-            <p>&copy;2016 Movie Places</p>
+        <a href=""> Kontakt</a>
+        <a href=""> Impressum</a>
+        <p>&copy;2016 Movie Places</p>
     </footer>
+
+
 </body>
 
 </html>
