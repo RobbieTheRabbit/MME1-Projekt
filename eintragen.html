@@ -7,6 +7,7 @@
     <title>MOVIE PLACES</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script language="javascript" type="text/javascript" src="/js/autofill.js"></script>
 
 </head>
 
@@ -84,8 +85,8 @@
                      <button id="los" type="submit" style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
                 </form>  
 <!--                    FÜR DEN EINGABE TEST-->
-                    <button id="1" onclick="reply_click(id)">Richtig</button>
-                    <button id="2" onclick="reply_click(id)">Falsch</button>
+                    <button id="1" onclick="richtigFill(id)">Richtig</button>
+                    <button id="2" onclick="falschFill(id)">Falsch</button>
                 </main>
 
 
@@ -146,39 +147,7 @@ function chkFormular() {
   }    
 }
     
-    // Richtige Einträge in das Formular
-    
-function reply_click(clicked_id) {
-    if (clicked_id === "1") {
 
-        document.getElementById("name").value = "Disney Land USA";
-        document.getElementById("country").value = "Florida";
-        document.getElementById("email").value = "contact@disneyland.com";
-        document.getElementById("chDaily").checked = true;
-        document.getElementById("timefrom").value = "10:00";
-        document.getElementById("timeto").value = "19:30";
-
-    }
-}
-
-
-// Falsche Einträge in das Formular
-
-function reply_click(clicked_id) {
-    if (clicked_id === "2") {
-
-
-        document.getElementById("name").value = "12345";
-        document.getElementById("country").value = "N1mm3rl4nd";
-        document.getElementById("email").value = "IchHabeKeineEmail";
-        document.getElementById("chDaily").checked = true;
-        document.getElementById("chWednesday").checked = true;
-        document.getElementById("chSaturday").checked = true;
-        document.getElementById("timefrom").value = "0";
-        document.getElementById("timeto").value = "25:30";
-
-    } 
-}
 </script>     
                     
                     
