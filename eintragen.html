@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script language="javascript" type="text/javascript" src="js/autofill.js"></script>
+    <script language="javascript" type="text/javascript" src="js/eintrag.js"></script>
 
 </head>
 
@@ -43,24 +44,34 @@
                 <form name="Formular" action="" method="post" > 
                     
 
-
-
-                <form name="eintrag" action="form_response.php" method="post">
-
                     <fieldset>
                         <legend>Neuer Eintrag</legend>
-                        <label for="name"><strong>Name des Drehortes:*</strong></label><input size="40" name="name" id="name" placeholder="z.B. Hobbingen">
+                        
+                         <label for="name"><strong>Name des Drehortes:</strong></label>
+ 
+                        <input id="name" size="40"type="text" name="name" placeholder ="z.B. Hobbingen" pattern="[a-zA-Z- -]{2,30}"
+                        autofocus required title="Nur Buchstaben erlaubt mit 2-30 Zeichen"/>
+                        
                         <br>
                         <br>
-                        <label for="country"><strong>Der Ort (Land):*</strong></label><input size="40" name="country" id="country" placeholder="z.B. Deutschland">
-                        <br>
+                        
+                       <label for="country"><strong>Der Ort (Land):</strong></label>
+ 
+                        <input id="country" size="40"type="text" name="country" placeholder ="z.B. Deutschland" pattern="[a-zA-Z- -]{2,30}"
+                        autofocus required title="Nur Buchstaben erlaubt mit 2-30 Zeichen"/> 
 
+                        <br>
                         <br> 
-                        <label for="email"><strong>Email des Tour Anbieters:*</strong></label><input size="40" name="email" id="email" placeholder="name@example.com">
-
+                        
+                        <label for="email"><strong>Email des Tour Anbieters:</strong></label>
+ 
+                        <input id="email" size="40"type="text" name="email" placeholder ="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        autofocus required title="Email-Adresse muss 4-40 Zeichen lang sein"/> 
+                        
 
                         <br>
-                        <br> <strong>Tage der Besichtigung:*</strong>
+                        <br> 
+                        <strong>Tage der Besichtigung:</strong>
                         <form action="demo_form.asp" method="get">
                             <input type="checkbox" id="chDaily" name="chDaily" id="chDaily" value="daily"> Täglich
                             <br>
@@ -73,82 +84,28 @@
                             <input type="checkbox" id="chSunday" name="chSunday" value="sunday"> Sonntag
                             <br>
                             <br> 
-                        <label for="time"><strong>Uhrzeit der Besichtigung:*</strong></label>
                             
-                        <label for="timefrom">Von:</label><input size="6" name="timefrom" id="timefrom" placeholder="HH:MM">
-                        <label for="timeto">Bis:</label><input size="6" name="timeto" id="timeto" placeholder="HH:MM">
+                        <label for="time"><strong>Uhrzeit der Besichtigung:</strong></label>
+ 
+                        <input id="timefrom" size="6"type="text" name="timefrom" placeholder ="HH:MM" pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+                        autofocus required title="Nur Zahlen erlaubt und exakt 5 Zeichen"/> 
+                            
+                        <input id="timeto" size="6"type="text" name="timeto" placeholder ="HH:MM" pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$"
+                        autofocus required title="Nur Zahlen erlaubt und exakt 5 Zeichen"/>     
                             
                             
                             <br>
 
                     </fieldset>
-                     <button id="los" type="submit" style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
+                     <button id="submit" type="submit" style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
                 </form>  
+                <script src="js/eintrag.js"></script>
 <!--                    FÜR DEN EINGABE TEST-->
                     <button id="1" onclick="richtigFill(id)">Richtig</button>
                     <button id="2" onclick="falschFill(id)">Falsch</button>
                 </main>
 
 
-<script>
-    var elem = document.getElementById('los');
-    elem.addEventListener('click', chkFormular);
- 
-function chkFormular() {
-  if (document.Formular.name.value == "") {
-    alert("Bitte Namen des Drehortes eingeben!");
-    document.Formular.name.focus();
-    return false;
-  }
-  if (document.Formular.country.value == "") {
-    alert("Bitte den Ort eingeben!");
-    document.Formular.country.focus();
-    return false;
-  }
-  if (document.Formular.email.value == "") {
-    alert("Bitte die E-Mail-Adresse des Tour Anbieters eingeben!");
-    document.Formular.email.focus();
-    return false;
-  }
-  if (document.Formular.email.value.indexOf("@") == -1) {
-    alert("Dies ist keine gültige E-Mail-Adresse!");
-    document.Formular.email.focus();
-    return false;
-  }
-    if (document.Formular.timefrom.value == "") {
-    alert("Bitte die Uhrzeiten eintragen!");
-    document.Formular.timefrom.focus();
-    return false;
-  }
-    if (document.Formular.timeto.value == "") {
-    alert("Bitte die Uhrzeiten eintragen!");
-    document.Formular.timeto.focus();
-    return false;
-  }
-  var chkZ = 1;
-  for (i = 0; i < document.Formular.timefrom.value.length; ++i)
-    if (document.Formular.timefrom.value.charAt(i) < "0" ||
-        document.Formular.timefrom.value.charAt(i) > "9")
-      chkZ = -1;
-  if (chkZ == -1) {
-    alert("Uhrzeit keine Zahl!");
-    document.Formular.timefrom.focus();
-    return false;
-  }
-  var chkZ = 1;
-  for (i = 0; i < document.Formular.timeto.value.length; ++i)
-    if (document.Formular.timeto.value.charAt(i) < "0" ||
-        document.Formular.timeto.value.charAt(i) > "9")
-      chkZ = -1;
-  if (chkZ == -1) {
-    alert("Uhrzeit keine Zahl!");
-    document.Formular.timeto.focus();
-    return false;
-  }    
-}
-    
-
-</script>     
                     
                     
                     
