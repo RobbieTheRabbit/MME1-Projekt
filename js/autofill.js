@@ -1,6 +1,6 @@
-// Richtige Einträge in das Formular
-
-function reply_click(clicked_id) {
+    // Richtige Einträge in das Formular
+    
+function richtigFill(clicked_id) {
     if (clicked_id === "1") {
 
         document.getElementById("name").value = "Disney Land USA";
@@ -16,7 +16,7 @@ function reply_click(clicked_id) {
 
 // Falsche Einträge in das Formular
 
-function reply_click(clicked_id) {
+function falschFill(clicked_id) {
     if (clicked_id === "2") {
 
 
@@ -29,7 +29,7 @@ function reply_click(clicked_id) {
         document.getElementById("timefrom").value = "0";
         document.getElementById("timeto").value = "25:30";
 
-    }
+    } 
 }
 
 // IDEE FÜR SPÄTERE TESTS
