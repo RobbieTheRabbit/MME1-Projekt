@@ -10,6 +10,15 @@ function richtigFill(clicked_id) {
         document.getElementById("timefrom").value = "10:00";
         document.getElementById("timeto").value = "19:30";
 
+    } else {
+        
+        document.getElementById("name").value = "Test";
+        document.getElementById("country").value = "Florida";
+        document.getElementById("email").value = "contact@disneyland.com";
+        document.getElementById("chDaily").checked = true;
+        document.getElementById("timefrom").value = "10:00";
+        document.getElementById("timeto").value = "19:30";
+        
     }
 }
 
