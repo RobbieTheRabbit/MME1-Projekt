@@ -49,7 +49,7 @@
                         
                          <label for="name"><strong>Name des Drehortes:</strong></label>
  
-                        <input id="name" size="40"type="text" name="name" placeholder ="z.B. Hobbingen" pattern="[a-zA-Z- -]{2,30}"
+                        <input id="name" size="35"type="text" name="name" placeholder ="z.B. Hobbingen" pattern="[a-zA-Z- -]{2,30}"
                         autofocus required title="Nur Buchstaben erlaubt mit 2-30 Zeichen"/>
                         
                         <br>
@@ -57,7 +57,7 @@
                         
                        <label for="country"><strong>Der Ort (Land):</strong></label>
  
-                        <input id="country" size="40"type="text" name="country" placeholder ="z.B. Deutschland" pattern="[a-zA-Z- -]{2,30}"
+                        <input id="country" size="25"type="text" name="country" placeholder ="z.B. Deutschland" pattern="[a-zA-Z- -]{2,30}"
                         autofocus required title="Nur Buchstaben erlaubt mit 2-30 Zeichen"/> 
 
                         <br>
@@ -102,8 +102,8 @@
                     
                     
 <!--                    FÜR DEN EINGABE TEST-->
-                    <button id="1" onclick="richtigFill(id)">Richtig</button>
-                    <button id="2" onclick="falschFill(id)">Falsch</button>
+                    <button id="1" onclick="richtigFill(this.value)">Richtig</button>
+                    <button id="2" onclick="falschFill(this.value)">Falsch</button>
                 </main>
 
 

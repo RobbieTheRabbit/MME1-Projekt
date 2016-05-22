@@ -1,45 +1,40 @@
-    // Richtige Einträge in das Formular
-    
-function richtigFill(clicked_id) {
-    if (clicked_id === "1") {
+// Richtige Einträge in das Formular
 
-        document.getElementById("name").value = "Disney Land USA";
-        document.getElementById("country").value = "Florida";
-        document.getElementById("email").value = "contact@disneyland.com";
-        document.getElementById("chDaily").checked = true;
-        document.getElementById("timefrom").value = "10:00";
-        document.getElementById("timeto").value = "19:30";
+function richtigFill(inhalt) {
 
-    } else {
-        
-        document.getElementById("name").value = "Test";
-        document.getElementById("country").value = "Florida";
-        document.getElementById("email").value = "contact@disneyland.com";
-        document.getElementById("chDaily").checked = true;
-        document.getElementById("timefrom").value = "10:00";
-        document.getElementById("timeto").value = "19:30";
-        
-    }
+    document.getElementById("name").value = "Walt Disney World Resort";
+    document.getElementById("country").value = "Amerika";
+    document.getElementById("email").value = "contact@disneyworld.com";
+    document.getElementById("chDaily").checked = true;
+    document.getElementById("timefrom").value = "09:00";
+    document.getElementById("timeto").value = "21:00";
+
+
 }
 
 
 // Falsche Einträge in das Formular
 
-function falschFill(clicked_id) {
-    if (clicked_id === "2") {
+function falschFill(inhalt) {
 
+    document.getElementById("name").value = "12345";
+    document.getElementById("country").value = "N1mm3rl4nd";
+    document.getElementById("email").value = "IchHabeKeineEmail";
+    document.getElementById("chDaily").checked = true;
+    document.getElementById("chWednesday").checked = true;
+    document.getElementById("chSaturday").checked = true;
+    document.getElementById("timefrom").value = "0";
+    document.getElementById("timeto").value = "25:30";
 
-        document.getElementById("name").value = "12345";
-        document.getElementById("country").value = "N1mm3rl4nd";
-        document.getElementById("email").value = "IchHabeKeineEmail";
-        document.getElementById("chDaily").checked = true;
-        document.getElementById("chWednesday").checked = true;
-        document.getElementById("chSaturday").checked = true;
-        document.getElementById("timefrom").value = "0";
-        document.getElementById("timeto").value = "25:30";
-
-    } 
 }
+
+
+
+
+
+
+
+
 
 // IDEE FÜR SPÄTERE TESTS
 

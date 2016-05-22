@@ -8,7 +8,7 @@
 
      var mapOptions = {
 
-         zoom: 15,
+         zoom: 8,
 
          center: myLatlng
 
