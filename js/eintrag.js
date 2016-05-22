@@ -22,13 +22,19 @@ countryInput.addEventListener("invalid", function (e) {
     }
 }, false);
 
+
+
 emailInput.addEventListener("invalid", function (e) {
     if (emailInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte die Email-Adresse des Veranstalters angeben!");
     } else if (!emailInput.validity.valid) {
-        e.target.setCustomValidity("Dies ist keine gültige Angabe!");
+        e.target.setCustomValidity("Dies ist keine gültige Email-Adresse!");   
     }
 }, false);
+
+
+
+
 
 timefromInput.addEventListener("invalid", function (e) {
     if (timefromInput.validity.valueMissing) {

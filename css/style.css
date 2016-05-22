@@ -137,6 +137,8 @@ footer {
     background: #F2F2F2;
 }
 
+
+
 input[type=submit] {
     float: right;
     margin-top: 10px;
@@ -149,6 +151,13 @@ input[type=text]:valid {
 input[type=text]:invalid {
     color: red;
 }
+
+input[type=email]:valid{
+  color:green
+}
+
+input[type=email]:invalid {
+    color: red;
 
 
 /*Tabellen*/
