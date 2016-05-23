@@ -6,7 +6,7 @@ emailInput = document.getElementById("email");
 timefromInput = document.getElementById("timefrom");
 timetoInput = document.getElementById("timeto");
 
-nameInput.addEventListener("invalid", function (e) {
+nameInput.addEventListener("invalid" "keyup", function (e) {
     if (nameInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte den Namen des Drehortes angeben!");
     } else if (!nameInput.validity.valid) {
@@ -14,7 +14,7 @@ nameInput.addEventListener("invalid", function (e) {
     }
 }, false);
 
-countryInput.addEventListener("invalid", function (e) {
+countryInput.addEventListener("invalid", "keyup", function (e) {
     if (countryInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte den Namen des Ortes angeben!");
     } else if (!countryInput.validity.valid) {
@@ -23,7 +23,7 @@ countryInput.addEventListener("invalid", function (e) {
 }, false);
 
 
-emailInput.addEventListener("invalid", function (e) {
+emailInput.addEventListener("invalid" ,"keyup", function (e) {
     if (emailInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte die Email-Adresse des Veranstalters angeben!");
     } else if(emailInput.validity.patternMismatch) {
@@ -33,7 +33,7 @@ emailInput.addEventListener("invalid", function (e) {
 
 
 
-timefromInput.addEventListener("invalid", function (e) {
+timefromInput.addEventListener("invalid", "keyup", function (e) {
     if (timefromInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte die Uhrzeit der Veranstaltung angeben!");
     } else if (!timefromInput.validity.valid) {
@@ -41,7 +41,7 @@ timefromInput.addEventListener("invalid", function (e) {
     }
 }, false);
 
-timetoInput.addEventListener("invalid", function (e) {
+timetoInput.addEventListener("invalid" , "keyup", function (e) {
     if (timetoInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte die Uhrzeit der Veranstaltung angeben!");
     } else if (!timetoInput.validity.valid) {
