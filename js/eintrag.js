@@ -23,16 +23,13 @@ countryInput.addEventListener("invalid", function (e) {
 }, false);
 
 
-
 emailInput.addEventListener("invalid", function (e) {
     if (emailInput.validity.valueMissing) {
         e.target.setCustomValidity("Bitte die Email-Adresse des Veranstalters angeben!");
-    } else if (!emailInput.validity.valid) {
-        e.target.setCustomValidity("Dies ist keine gültige Email-Adresse!");   
+    } else if(emailInput.validity.patternMismatch) {
+        e.target.setCustomValidity("Die Email-Adresse muss mit @beuth-hochschule.de enden!");
     }
 }, false);
-
-
 
 
 
