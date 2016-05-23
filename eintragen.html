@@ -68,7 +68,7 @@
                         <label for="email"><strong>Email des Tour Anbieters:</strong></label>
  
                         <input type="email" id="email" size="40" name="email"  placeholder ="name@example.com" pattern="^[a-zA-Z]+@beuth-hochschule\.de$"
-                        autofocus required title="Email-Adresse muss 4-40 Zeichen lang sein"/> 
+                        autofocus required title="Email-Adresse muss mit @beuth-hochschule.de enden"/> 
                         
 
                         <br>
@@ -99,7 +99,7 @@
                             <br>
 
                     </fieldset>
-                     <button value="submit" id="submit" type="submit"  style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
+                     <button value="submit" id="submit" type="submit" style="margin-top:12px; height: 30px; width:100px;"> Absenden</button>
                 </form>  
                     <script src="js/eintrag.js"></script>
                                     
@@ -161,9 +161,8 @@
                     <ul>
                         <p>Kennen Sie noch andere Filmschauplätze?
                             <br> Dann können Sie diese hier eintragen:</p>
-                        <FORM METHOD="LINK" ACTION="eintragen.html" align="center">
-                            <INPUT TYPE="submit" VALUE="Neue Location hinzufügen!" style="height: 30px; width:200px;">
-                        </FORM>
+                        <button  onclick="location.href='eintragen.html'"  style="height: 30px; width:200px;"> Neue Location hinzufügen! </button>
+                        
 
                     </ul>
 
