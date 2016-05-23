@@ -6,6 +6,8 @@ function richtigFill(inhalt) {
     document.getElementById("country").value = "Amerika";
     document.getElementById("email").value = "disney@beuth-hochschule.de";
     document.getElementById("chDaily").checked = true;
+        document.getElementById("chWednesday").checked = false;
+    document.getElementById("chSaturday").checked = false;
     document.getElementById("timefrom").value = "09:00";
     document.getElementById("timeto").value = "21:00";
 
@@ -36,9 +38,9 @@ function mixFill(inhalt) {
     document.getElementById("name").value = "Easy Rider Filmset";
     document.getElementById("country").value = "Route 66";
     document.getElementById("email").value = "easyrider@web.de";
-    document.getElementById("chDaily").checked = true;
+    document.getElementById("chDaily").checked = false;
     document.getElementById("chWednesday").checked = false;
-    document.getElementById("chSaturday").checked = false;
+    document.getElementById("chSaturday").checked = true;
     document.getElementById("timefrom").value = "06:00";
     document.getElementById("timeto").value = "24:00";
 
