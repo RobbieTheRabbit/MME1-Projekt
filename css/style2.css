@@ -15,12 +15,14 @@ body {
     position: absolute;
     z-index: 3;
     top: 4px;
-    left: 15%;
+    left: 20%;
 }
 
 .logo img {
-    height: 180px;
+    max-height: 190px;
     width: auto;
+    height: auto;
+    
 }
 
 .navbar {
@@ -100,4 +102,61 @@ li {
     color: #8c8686;
     font-family: 'Lato', arial, sans-serif;
     font-size: 12px;
+}
+
+
+
+/* -- Tabellen -- */
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #999;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #999;
+    color: #444;
+    background-color: #F7FDFA;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #999;
+    color: #fff;
+    background-color: #26ADE4;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.tg .tg-0o0u {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #3088bf;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-wr1l {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    ;
+    text-align: center;
+    vertical-align: top
 }
