@@ -9,6 +9,8 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     background: url("/img/blacktex.jpg") repeat;
+    color: black;
+    image-orientation: center;
 }
 
 .logo {
@@ -27,19 +29,46 @@ body {
 
 .navbar {
     background: #131212;
+    
+}
+
+.navbar-nav li a {
+    
+    color: aqua;
+    
 }
 
 #container {
-    min-height: 100%;
     position: relative;
+    color: aliceblue;
+    overflow: auto;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url(../img/main.png);
+}
+
+section {
+    width: 1000px;
+    height:inherit;
+    min-height: 600px;
+    overflow-x: 
+    overflow-y: scroll;
+    margin: 0 auto;
+    background: #F2F2F2;
+    padding: 20px
 }
 
 body > .container {
-    padding: 60px 15px 0;
-    color: white;
-    background-color: #232222;
-    border: 10px;
+    color: black;
+    background: url(../img/main.png);
+    border: 5px;
     border-color: aliceblue;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .header {
@@ -69,23 +98,24 @@ body > .container {
 #fo_left {
     color: #8c8686;
     font-family: 'Lato', arial, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
-    height: 80px;
+    height: 50px;
     width: auto;
-    line-height: 60px;
+    line-height: 50px;
     float: left;
     padding-left: 20%;
+    color: white;
 }
 
 #fo_right {
     color: #8c8686;
     font-family: 'Lato', arial, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
-    height: 80px;
+    height: 50px;
     width: auto;
-    line-height: 60px;
+    line-height: 50px;
     float: right;
     padding-right: 20%;
 }
@@ -96,12 +126,14 @@ li {
     list-style: none;
     display: inline;
     padding: 0 6px;
+    color:deepskyblue;
 }
 
 #fo_right a {
     color: #8c8686;
     font-family: 'Lato', arial, sans-serif;
     font-size: 12px;
+    color: white;
 }
 
 
