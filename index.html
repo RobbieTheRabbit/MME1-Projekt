@@ -45,9 +45,9 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#!/home" id="m_home">Startseite</a></li>
-                    <li><a href="drehorte.html">Drehorte</a></li>
-                    <li><a href="#about">Über Uns</a></li>
-                    <li><a href="#!/kontakt" id="m_kontakt">Kontakt</a></li>
+                    <li><a href="#!/locations" id="m_locations">Drehorte</a></li>
+                    <li><a href="#!/about" id="m_about">Über Uns</a></li>
+                    <li><a href="#!/contact" id="m_kontakt">Kontakt</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -60,16 +60,9 @@
 
     <!-- Begin page content -->
  
-<section id="main">
-<h1>home</h1>
-<p>BLA</p>
-<p>BLA</p>
-<p>BLA</p>
-    
-</section>    
- <!--   
-    <section id="main" >
-        <div class="container">
+
+    <section>
+        <div class="container" id="main">
 
             <h1>Willkommen auf Movie Locations!</h1>
 
@@ -80,7 +73,7 @@
     </section>
     
     <br>
--->
+
 
     <!-- Footer -->
     <footer>
@@ -112,19 +105,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/jquery-ui-1.9.2.custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#m_kontakt").click(function() {
-                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
-                    $("#main").load("kontakt.html", function () {
-                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
-            
-                    });
-                });
-            });
-        });   
-  
-    </script>
+    <script src="js/ajax.js"></script>
+    <!--
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script language="javascript" type="text/javascript" src="js/gMaps.js"></script>
+    -->
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
