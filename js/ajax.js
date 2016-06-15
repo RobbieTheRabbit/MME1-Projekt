@@ -31,16 +31,46 @@ $(document).ready(function() {
             
                     });
                 });
-            }); 
-            $("#m_hobbingen").click(function() {
+            });  
+    
+        });   
+
+
+
+
+
+//Verlinkungen
+$(document).ready(function() {
+            $("#s_hobbingen").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
                     $("#main").load("hobbingen.html", function () {
                         $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
             
                     });
                 });
-            });     
-        });   
+            });   
+    $("#s_eintragen").click(function() {
+                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
+                    $("#main").load("eintragen.html", function () {
+                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
+            
+                    });
+                });
+            }); 
+    $("#s_bearbeiten").click(function() {
+                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
+                    $("#main").load("bearbeiten.html", function () {
+                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
+            
+                    });
+                });
+            }); 
+        });  
+
+
+
+
+
 //  Footer
 $(document).ready(function() {
             $("#f_impressum").click(function() {
@@ -67,4 +97,5 @@ $(document).ready(function() {
                     });
                 });
             }); 
+    
      }); 
