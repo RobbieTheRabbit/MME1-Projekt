@@ -1,3 +1,4 @@
+//Navbar
 $(document).ready(function() {
             $("#m_home").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
@@ -40,4 +41,30 @@ $(document).ready(function() {
                 });
             });     
         });   
-  
+//  Footer
+$(document).ready(function() {
+            $("#f_impressum").click(function() {
+                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
+                    $("#main").load("impressum.html", function () {
+                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
+            
+                    });
+                });
+            });    
+            $("#f_kontakt").click(function() {
+                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
+                    $("#main").load("kontakt.html", function () {
+                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
+            
+                    });
+                });
+            });
+            $("#f_about").click(function() {
+                $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
+                    $("#main").load("überuns.html", function () {
+                        $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
+            
+                    });
+                });
+            }); 
+     }); 
