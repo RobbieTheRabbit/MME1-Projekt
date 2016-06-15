@@ -52,7 +52,7 @@ section {
     max-width: 1000px;
     height:inherit;
     min-height: 600px;
-    overflow-x: 
+    overflow-x:hidden;
     overflow-y: scroll;
     margin: 0 auto;
     background: #F2F2F2;
