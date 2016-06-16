@@ -11,6 +11,7 @@ body {
     background: url("../img/blacktex.jpg") repeat;
     color: black;
     image-orientation: center;
+    
 }
 
 .logo {
@@ -65,6 +66,7 @@ body > .container {
     width: 1050px;
     margin: 0 auto;
     padding: 10px;
+    
 }
 
 header {
@@ -80,6 +82,17 @@ header {
 iframe {
     max-width: 100%;
 }
+
+
+
+h1 {
+    font-family: 'Cormorant SC', serif;
+    
+}
+
+#success_message{ display: none;}
+
+
 
 
 /*--- FOOTER ---*/
