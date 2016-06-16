@@ -90,9 +90,9 @@ h1 {
     
 }
 
-#success_message{ display: none;}
-
-
+.button{
+  margin:0px auto; 
+}
 
 
 /*--- FOOTER ---*/
