@@ -1,12 +1,14 @@
 <?php
-    $jsondata = file_get_contents("data.json");
-    $json = json_decode($jsondata, true);
-    echo $json["locations"][3]["Name"];
-
-
-//    $db_link = mysqli_connect('localhost', 'root', '', 'movieplaces');
-
-    
-
-
-?>
+try
+{
+ // create PHP Data Object
+ $pdo = new PDO('mysql:host=127.0.0.1;dbname=movieplaces', 'root', '');
+ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ $pdo->exec('SET NAMES "utf8"');
+}
+catch (PDOException $e)
+{
+ $error = 'Unable to connect to the database server: '.$e->getMessage();
+ include 'error_inc.php';
+ exit();
+}
