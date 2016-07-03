@@ -19,8 +19,16 @@
     $sql = "SELECT * FROM `locations`";
     $query = mysql_query($sql) or die(mysql_error());
 
-    echo '<table>';
+    echo '<table border=2>';
 
+    echo '<tr>';
+       echo '<th>Name</th>';
+       echo '<th>Ort</th>';
+       echo '<th>Seite</th>';
+       echo '<th>Email</th>';
+       echo '<th>Datum</th>';
+       echo '<th>Uhrzeit</th>';
+	echo '</tr>';
     while($fetch = mysql_fetch_assoc($query)) {
 
     	echo '<tr>';
