@@ -26,7 +26,7 @@ $(document).ready(function() {
             }); 
             $("#m_locations").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
-                    $("#main").load("drehorte.html", function () {
+                    $("#main").load("drehorte.php", function () {
                         $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
             
                     });
@@ -43,7 +43,7 @@ $(document).ready(function() {
 $(document).ready(function() {
             $("#s_hobbingen").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
-                    $("#main").load("hobbingen2.html", function () {
+                    $("#main").load("hobbingen.php", function () {
                         $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
             
                     });
