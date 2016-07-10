@@ -1,14 +1,12 @@
 <?php
-try
-{
- // create PHP Data Object
- $pdo = new PDO('mysql:host=127.0.0.1;dbname=movieplaces', 'root', '');
- $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
- $pdo->exec('SET NAMES "utf8"');
-}
-catch (PDOException $e)
-{
- $error = 'Unable to connect to the database server: '.$e->getMessage();
- include 'error_inc.php';
- exit();
-}
+     define('_HOST_NAME','127.0.0.1');
+     define('_DATABASE_NAME','movieplaces');
+     define('_DATABASE_USER_NAME','root');
+     define('_DATABASE_PASSWORD','');
+ 
+     $con = new MySQLi(_HOST_NAME,_DATABASE_USER_NAME,_DATABASE_PASSWORD,_DATABASE_NAME);
+  
+     if($con->connect_errno)
+     {
+       die("Keine Verbidung möglich! : -> ".$con->connect_error);
+     }

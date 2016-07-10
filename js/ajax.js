@@ -51,7 +51,7 @@ $(document).ready(function() {
             });   
             $("#s_eintragen").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
-                    $("#main").load("eintragen.html", function () {
+                    $("#main").load("eintragen.php", function () {
                         $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
             
                     });

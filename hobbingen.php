@@ -27,7 +27,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="/img/hobbiton/ho1.png" alt="ho_start" width="830" height="400">
+                    <img src="img/hobbiton/ho1.png" alt="ho_start" width="830" height="400">
                     <div class="carousel-caption">
                         <h3>Hobbiton</h3>
                         <p>In Matamata (Neuseeland)</p>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="/img/hobbiton/ho3.png" alt="Chania" width="830" height="400">
+                    <img src="img/hobbiton/ho3.png" alt="Chania" width="830" height="400">
                     <div class="carousel-caption">
                         <h3>Hobbiton</h3>
                         <p>Original Kulissen aus den "Herr der Ringe" und "Der Hobbit" Filmen</p>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="/img/hobbiton/ho2.png" alt="ho_night" width="830" height="400">
+                    <img src="img/hobbiton/ho2.png" alt="ho_night" width="830" height="400">
                     <div class="carousel-caption">
                         <h3>Hobbiton</h3>
                         <p>Der schöne Anblick der Kulisse bei Nacht</p>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="/img/hobbiton/ho4.png" alt="ho_tour" width="830" height="400">
+                    <img src="img/hobbiton/ho4.png" alt="ho_tour" width="830" height="400">
                     <div class="carousel-caption">
                         <h3>Hobbiton</h3>
                         <p>Direkt vor Ort alles ansehen können</p>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="/img/hobbiton/ho5.png" alt="ho_inside" width="830" height="400">
+                    <img src="img/hobbiton/ho5.png" alt="ho_inside" width="830" height="400">
                     <div class="carousel-caption">
                         <h3>Hobbiton</h3>
                         <p>Blick inerhalb der Gebäude</p>
@@ -90,8 +90,7 @@
     <!-- TAAAAAAAABEEEEEEEELLEEEEEEEEEEEEEEEEEEE -->
 <?php
 
-    $con = mysqli_connect('127.0.0.1', 'root', '');
-    $db_select = mysqli_select_db($con, 'movieplaces');
+    require_once 'connectDB.php';
 
     $sql = "SELECT * FROM `locations` WHERE id='1'";
     $query = mysqli_query($con, $sql);
