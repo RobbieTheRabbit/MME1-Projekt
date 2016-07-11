@@ -92,7 +92,7 @@
 
     require_once 'connectDB.php';
 
-    $sql = "SELECT * FROM `locations` WHERE id='1'";
+    $sql = "SELECT * FROM `data` WHERE id='1'";
     $query = mysqli_query($con, $sql);
 
 

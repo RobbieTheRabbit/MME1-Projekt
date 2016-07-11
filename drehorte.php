@@ -19,10 +19,10 @@
 <!-- HIER DANN DIE TABELLE! -->
     <?php
 
-    $con = mysqli_connect('127.0.0.1', 'root', '');
-    $db_select = mysqli_select_db($con, 'movieplaces');
+    $con = mysqli_connect('localhost', 'root', '');
+    $db_select = mysqli_select_db($con, 'dbtest');
 
-    $sql = "SELECT * FROM `locations`";
+    $sql = "SELECT * FROM `data`";
     $query = mysqli_query($con, $sql);
 
 
@@ -70,7 +70,7 @@ echo '</table>';
 
 <div class="col-md-12 text-center">
     <p>Wenn Sie noch andere Kennen und uns diese Mitteilen möchten, dann benutzen Sie bitte den Button.</p>
-    <button class="btn btn-primary" onclick="href='#!eintragen'" id='s_eintragen' style="height: 40px; width:200px;"> Neue Location hinzufügen! </button>
+    <button class="btn btn-primary" onclick="window.location.replace('drehorte2.php')"  style="height: 40px; width:200px;"> Neue Location hinzufügen! </button>
 </div>
 
 

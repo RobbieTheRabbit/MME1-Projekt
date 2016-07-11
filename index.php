@@ -51,6 +51,7 @@
                     <li><a href="#!/locations" id="m_locations">Drehorte</a></li>
                     <li><a href="#!/about" id="m_about">Über Uns</a></li>
                     <li><a href="#!/contact" id="m_kontakt">Kontakt</a></li>
+                    <li><a href="#!/drehorte2.php" id="m_database">Datenbank</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
