@@ -4,9 +4,9 @@
      define('_DATABASE_USER_NAME','root');
      define('_DATABASE_PASSWORD','');
  
-     $con = new MySQLi(_HOST_NAME,_DATABASE_USER_NAME,_DATABASE_PASSWORD,_DATABASE_NAME);
+     $dbcon = new MySQLi(_HOST_NAME,_DATABASE_USER_NAME,_DATABASE_PASSWORD,_DATABASE_NAME);
   
-     if($con->connect_errno)
+     if($dbcon->connect_errno)
      {
-       die("Keine Verbidung möglich! : -> ".$con->connect_error);
+       die("Keine Verbidung möglich! : -> ".$dbcon->connect_error);
      }

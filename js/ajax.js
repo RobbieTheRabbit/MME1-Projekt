@@ -34,7 +34,7 @@ $(document).ready(function() {
             });  
             $("#m_database").click(function() {
                 $("#main").animate({opacity: "0",filter: "alpha(opacity=0)"}, 400, function () {
-                    $("#main").load("drehorte2.php", function () {
+                    $("#main").load("database.php", function () {
                         $("#main").animate({opacity: "1", filter: "alpha(opacity=100)"}, 400);
             
                     });

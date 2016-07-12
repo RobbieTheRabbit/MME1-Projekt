@@ -70,7 +70,7 @@ echo '</table>';
 
 <div class="col-md-12 text-center">
     <p>Wenn Sie noch andere Kennen und uns diese Mitteilen möchten, dann benutzen Sie bitte den Button.</p>
-    <button class="btn btn-primary" onclick="window.location.replace('drehorte2.php')"  style="height: 40px; width:200px;"> Neue Location hinzufügen! </button>
+    <button class="btn btn-primary" onclick="window.location.replace('database.php')"  style="height: 40px; width:250px;"> Location Hinzufügen/Bearbeiten! </button>
 </div>
 
 

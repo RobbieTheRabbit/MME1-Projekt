@@ -93,7 +93,7 @@
     require_once 'connectDB.php';
 
     $sql = "SELECT * FROM `data` WHERE id='1'";
-    $query = mysqli_query($con, $sql);
+    $query = mysqli_query($dbcon, $sql);
 
 
 echo '<table class="tg" class="table-responsive" style="undefined;table-layout: fixed;">';
@@ -135,9 +135,11 @@ echo '</table>';
 ?>
 <br>
 
+<!--
     <div class="col-md-12 text-center">
         <button class="btn btn-primary" onclick="href='#!bearbeiten'" id='s_bearbeiten' style="height: 40px; width:200px;"> Ändern </button>
     </div>
+-->
 
 
 
